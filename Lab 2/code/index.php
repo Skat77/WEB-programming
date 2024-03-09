@@ -41,3 +41,15 @@ echo "<br> Task 12 <br>";
 
 echo 8**2;
 echo "<br>";
+
+echo "<br> Task 13 <br>";
+
+$my_num = 77;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+echo "<br>";
