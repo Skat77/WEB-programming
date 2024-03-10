@@ -135,3 +135,45 @@ function printStringReturnNumber($str): int {
 $my_num = printStringReturnNumber("12345");
 echo $my_num . "<br>";
 
+echo "<br> Task 16 <br>";
+
+function increaseEnthusiasm($str): string {
+  return $str . "!<br>";
+}
+echo increaseEnthusiasm("Good morning");
+function repeatThreeTimes($str): string {
+    return $str . " " . $str . " " . $str;
+}
+echo repeatThreeTimes("Go") . "<br>";
+echo increaseEnthusiasm(repeatThreeTimes("Go"));
+function cut($str, $letters = 10): string {
+    $res = "";
+    for($i = 0; $i < $letters; $i++) {
+        $res .= $str[$i];
+    }
+    return $res . "<br>";
+}
+echo cut("Hello, World", 5);
+$arrrec = [1, 4, 6, 14, 45, 77, 100];
+function output($arr, $index = 0): void {
+    if ($index == count($arr)) {
+        return;
+    }
+    echo $arr[$index] . " ";
+    output($arr, $index + 1);
+}
+output($arrrec);
+echo "<br>";
+function sumOfDigits($num): int {
+    $res = 0;
+    while ($num > 0) {
+        $res += $num % 10;
+        $num = floor($num / 10);
+    }
+    if ($res > 9) {
+        $res = sumOfDigits($res);
+    }
+    return $res;
+}
+echo sumOfDigits(1984) . "<br>";
+
