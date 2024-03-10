@@ -126,3 +126,12 @@ while ($sum <= 10) {
 }
 echo $ind . "<br>";
 
+echo "<br> Task 15 <br>";
+
+function printStringReturnNumber($str): int {
+    echo $str . " -> ";
+    return(int)$str;
+}
+$my_num = printStringReturnNumber("12345");
+echo $my_num . "<br>";
+
