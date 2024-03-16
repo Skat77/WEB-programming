@@ -176,3 +176,62 @@ function sumOfDigits($num): int {
     return $res;
 }
 echo sumOfDigits(1984) . "<br>";
+
+echo "<br> Task 17 <br>";
+
+$arrX = [];
+for ($i = 0; $i < 5; $i++) {
+    $arrX[] = "x";
+    for ($j = $i; $j > 0; $j--) {
+        $arrX[$i] .= "x";
+    }
+}
+foreach ($arrX as $val) {
+    echo $val . " ";
+}
+echo "<br>";
+function arrayFill(string $str, int $length): array
+{
+    $array = [];
+    for ($i = 0; $i < $length; $i++) {
+        $array[] = $str;
+    }
+    return  $array;
+}
+$arrToFill = arrayFill("Hehe", 5);
+foreach ($arrToFill as $val) {
+    echo $val . " ";
+}
+echo "<br>";
+$arr2Dim = [[1, 2, 3], [4, 5], [6]];
+$sum  = 0;
+foreach ($arr2Dim as $dim) {
+    foreach ($dim as $val) {
+        $sum += $val;
+    }
+}
+echo $sum . "<br>";
+$arrToCreate = [[]];
+$value = 1;
+for ($i = 0; $i < 3; $i++) {
+    for ($j = 0; $j < 3; $j++) {
+        $arrToCreate[$i][$j] = $value;
+        $value++;
+    }
+}
+foreach ($arrToCreate as $dim) {
+    foreach ($dim as $val) {
+        echo $val . " ";
+    }
+}
+echo "<br>";
+$arr2539 = [2, 5, 3, 9];
+$result = ($arr2539[0] * $arr2539[1]) + ($arr2539[2] * $arr2539[3]);
+echo $result . "<br>";
+$user = ["name" => "Arseniy", "surname" => "Davydovskiy", "patronymic" => "Igorevich"];
+echo $user["surname"] . " " . $user["name"] . " " . $user["patronymic"] . "<br>";
+$date = ["year" => "2003", "month" => "09", "day" => "03"];
+echo $date["year"] . "-" . $date["month"] . "-" . $date["day"] . "<br>";
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr) . "<br>";
+echo $arr[count($arr) - 1] . " " . $arr[count($arr) - 2] . "<br>";
