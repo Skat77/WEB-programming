@@ -60,7 +60,7 @@ $a = 10;
 $b = 3;
 echo $a % $b;
 echo "<br>";
-if ($a % $b == 0) {
+if (0 === $a % $b) {
     echo 'Делится' . $a / $b;
 }
 else {
@@ -107,8 +107,8 @@ echo "<br>";
 $number = 30;
 $divs = [];
 $k = 1;
-while ($k <= ceil($number / 2)) {
-    if ($number % $k == 0) {
+while (ceil($number / 2) >= $k) {
+    if (0 === $number % $k) {
         $divs[] = $k;
     }
     $k++;
@@ -120,7 +120,7 @@ echo "<br>";
 $arr10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $sum = 0;
 $ind = 0;
-while ($sum <= 10) {
+while (10 >= $sum) {
     $sum += $arr10[$ind];
     $ind++;
 }
@@ -138,7 +138,7 @@ echo $my_num . "<br>";
 echo "<br> Task 16 <br>";
 
 function increaseEnthusiasm($str): string {
-  return $str . "!<br>";
+    return $str . "!<br>";
 }
 echo increaseEnthusiasm("Good morning");
 function repeatThreeTimes($str): string {
@@ -156,7 +156,7 @@ function cut($str, $letters = 10): string {
 echo cut("Hello, World", 5);
 $arrrec = [1, 4, 6, 14, 45, 77, 100];
 function output($arr, $index = 0): void {
-    if ($index == count($arr)) {
+    if (count($arr) === $index) {
         return;
     }
     echo $arr[$index] . " ";
@@ -166,14 +166,13 @@ output($arrrec);
 echo "<br>";
 function sumOfDigits($num): int {
     $res = 0;
-    while ($num > 0) {
+    while (0 < $num) {
         $res += $num % 10;
         $num = floor($num / 10);
     }
-    if ($res > 9) {
+    if (9 < $res) {
         $res = sumOfDigits($res);
     }
     return $res;
 }
 echo sumOfDigits(1984) . "<br>";
-
