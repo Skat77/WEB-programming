@@ -289,3 +289,24 @@ for ($i = 0; $i <= 20; $i++) {
     }
     echo "<br>";
 }
+
+echo "<br> Task 20 <br>";
+
+$array = [4, 8, 3, 2, 11, 17, 9];
+echo array_sum($array) / count($array) . "<br>";
+$sumOf1To100 = ((1 + 100) / 2) * 100;
+echo $sumOf1To100 . "<br>";
+$array = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+$arraySqrt = array_map("sqrt", $array);
+foreach ($arraySqrt as $val) {
+    echo $val . " ";
+}
+echo "<br>";
+$numbers = range(1, 26);
+$letters = range ("a", "z");
+$arrayAlphabet = array_combine($letters, $numbers);
+print_r($arrayAlphabet);
+echo "<br>";
+$str = "1234567890";
+$strSplit = str_split($str, 2);
+echo array_sum($strSplit) . "<br>";
