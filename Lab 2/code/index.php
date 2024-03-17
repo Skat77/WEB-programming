@@ -235,3 +235,48 @@ echo $date["year"] . "-" . $date["month"] . "-" . $date["day"] . "<br>";
 $arr = ['a', 'b', 'c', 'd', 'e'];
 echo count($arr) . "<br>";
 echo $arr[count($arr) - 1] . " " . $arr[count($arr) - 2] . "<br>";
+
+echo "<br> Task 18 <br>";
+
+function greaterThan10($a, $b): string
+{
+    if (10 < $a + $b) {
+        return "Sum of $a and $b is greater than 10";
+    }
+    return "Sum of $a and $b is not greater than 10";
+}
+echo greaterThan10(6, 3) . "<br>";
+function equalNumbers($a, $b): bool
+{
+    if ($a === $b) {
+        return true;
+    }
+    return false;
+}
+$a = 17;
+$b = 18;
+echo "Equality of numbers $a and $b: " . (equalNumbers($a, $b) ? "true" : "false") . "<br>";
+$test = 0;
+echo ($test == 0) ? "Верно" : "";
+echo "<br>";
+$age = 77;
+if (10 > $age || 99 < $age) {
+    echo "Age is out of range <br>";
+}
+else {
+    $sum = 0;
+    while (1 < $age) {
+        $sum += $age % 10;
+        $age = floor($age / 10);
+    }
+    if (10 <= $sum) {
+        echo "Sum is double-digit number <br>";
+    }
+    else {
+        echo "Sum is single-digit number <br>";
+    }
+}
+$arr = [1, 2, 3];
+if (3 === count($arr)) {
+    echo array_sum($arr) . "<br>";
+}
