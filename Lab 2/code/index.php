@@ -1,5 +1,5 @@
 <?php
-echo "Task 1<br>";
+echo "Task 1 <br>";
 /* Imagine a lot of code here */
 $very_bad_unclear_name = "15 chicken wings";
 
@@ -8,25 +8,20 @@ $order .= " and 5 nuggets, please";
 
 
 // Don't change the line below
-echo "\nYour order is: $very_bad_unclear_name.";
+echo "\nYour order is: $very_bad_unclear_name. <br>";
 
-echo "<br><br> Task 2 <br>";
+echo "<br> Task 2 <br>";
 
 $var1 = 17;
-echo $var1;
-echo "<br>";
+echo $var1 . "<br>";
 $var2 = 5;
-echo $var2;
-echo "<br>";
+echo $var2 . "<br>";
 $var3 = 10.3;
-echo $var3;
-echo "<br>";
-echo $var1 - $var2;
-echo "<br>";
+echo $var3 . "<br>";
+echo $var1 - $var2 . "<br>";
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo $last_month - $this_month;
-echo "<br>";
+echo $last_month - $this_month . "<br>";
 
 echo "<br> Task 11 <br>";
 
@@ -34,13 +29,11 @@ $num_languages = 4;
 $months = 11;
 $days = $months * 16;
 $days_per_language = $days / $num_languages;
-echo $days_per_language;
-echo "<br>";
+echo $days_per_language . "<br>";
 
 echo "<br> Task 12 <br>";
 
-echo 8**2;
-echo "<br>";
+echo 8**2 . "<br>";
 
 echo "<br> Task 13 <br>";
 
@@ -51,22 +44,19 @@ $answer *= 2;
 $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
-echo $answer;
-echo "<br>";
+echo $answer . "<br>";
 
 echo "<br> Task 14 <br>";
 
 $a = 10;
 $b = 3;
-echo $a % $b;
-echo "<br>";
+echo $a % $b . "<br>";
 if (0 === $a % $b) {
-    echo 'Делится' . $a / $b;
+    echo 'Делится' . $a / $b . "<br>";
 }
 else {
-    echo 'Делится с остатком ' . $a % $b;
+    echo 'Делится с остатком ' . $a % $b . "<br>";
 }
-echo "<br>";
 $st = pow(2,10);
 echo $st . "<br>";
 echo sqrt(245) . "<br>";
@@ -83,24 +73,24 @@ $arr587 = ["floor" => floor(sqrt(587)), "ceil" => ceil(sqrt(587))];
 echo $arr587["floor"] . " " . $arr587["ceil"] . "<br>";
 echo min(4, -2, 5, 19, -130, 0, 10) . " " . max(4, -2, 5, 19, -130, 0, 10) . "<br>";
 echo rand(1, 100) . "<br>";
-$arrrand = [];
+$arrRand = [];
 for ($i = 0; $i < 10; $i++){
-    $arrand[] = rand(1, 100);
+    $arrRand[] = rand(1, 100);
 }
-foreach ($arrand as $val){
+foreach ($arrRand as $val){
     echo $val . " ";
 }
 echo "<br>";
 $a = 3;
 $b = 5;
 echo abs($a - $b) . "<br>";
-$arrabs = [1, 2, -1, -2, 3, -3];
+$arrAbs = [1, 2, -1, -2, 3, -3];
 $j = 0;
-foreach ($arrabs as $val) {
-    $arrabs[$j] = abs($val);
+foreach ($arrAbs as $val) {
+    $arrAbs[$j] = abs($val);
     $j++;
 }
-foreach ($arrabs as $val) {
+foreach ($arrAbs as $val) {
     echo $val . " ";
 }
 echo "<br>";
@@ -154,7 +144,7 @@ function cut($str, $letters = 10): string {
     return $res . "<br>";
 }
 echo cut("Hello, World", 5);
-$arrrec = [1, 4, 6, 14, 45, 77, 100];
+$arrRec = [1, 4, 6, 14, 45, 77, 100];
 function output($arr, $index = 0): void {
     if (count($arr) === $index) {
         return;
@@ -162,7 +152,7 @@ function output($arr, $index = 0): void {
     echo $arr[$index] . " ";
     output($arr, $index + 1);
 }
-output($arrrec);
+output($arrRec);
 echo "<br>";
 function sumOfDigits($num): int {
     $res = 0;
