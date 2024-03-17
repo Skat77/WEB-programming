@@ -280,3 +280,12 @@ $arr = [1, 2, 3];
 if (3 === count($arr)) {
     echo array_sum($arr) . "<br>";
 }
+
+echo "<br> Task 19 <br>";
+
+for ($i = 0; $i <= 20; $i++) {
+    for ($j = $i; $j > 0; $j--) {
+        echo "x";
+    }
+    echo "<br>";
+}
