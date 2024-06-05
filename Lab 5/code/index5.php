@@ -31,6 +31,7 @@
         <thead>
             <th>Category</th>
             <th>Title</th>
+            <th>Email</th>
             <th>Description</th>
         </thead>
         <tbody>
